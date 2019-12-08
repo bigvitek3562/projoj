@@ -68,7 +68,7 @@ input:focus, textarea:focus {
 .ingred_selected{
 	position: relative;
 	overflow: auto;
-	height: calc(100% - 450px);
+	height: calc(100% - 410px);
 	min-height: 80px;
 	margin-bottom: 10px;
 }
@@ -115,7 +115,7 @@ input:focus, textarea:focus {
 	position: absolute;
 	top: 70px;
 	width: 49%;
-	height: 95%;
+	height: 90%;
 	left:0;
 	margin: 8px;
 	overflow: auto;
@@ -125,7 +125,7 @@ input:focus, textarea:focus {
 	position: absolute;
 	top: 70px;
 	width: 49%;
-	height: 95%;
+	height: 90%;
 	right:0;
 	margin: 8px;
 	overflow: auto;
@@ -134,7 +134,7 @@ input:focus, textarea:focus {
 .recipe_list{
 	font-family: Arial;
 	width: 90%;
-	height: 80%;
+	height: 85%;
 	font-size: 30px;
 	color: white;
 	border-radius: 3px;
