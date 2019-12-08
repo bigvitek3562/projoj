@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  overflow: scroll; WJANJT THE FUCK          
+  background-image: url(https://sun9-45.userapi.com/c855120/v855120210/131d2e/uH210zNIz04.jpg) ;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#veggies{
+  top: 280px;
+  left: 520px;
+  position: fixed;
+}
+#Poisk {
+  height: 400px;
+  width: 800px;
+  top:-420px;
+  left:500px;
+  border: 6px solid rgb(0,128,0);
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+
+}
+#Poisk.active{
+  top:300px;
+}
+#Poisk.passive{
+  top:-820px;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+#fndForm {
+  width:300px;
+  height:155px;
+  position: fixed;
+  background-color: transparent;
+  left: 950px;
+  top:400px;
+  cursor: pointer;
+}
+#mainbar {
+  top: 1000px;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+
+  background-color:#57626F;
+  width: 1000px;
+  margin: 0 auto;
+  height: 1000px;
+  position: relative;
+  border-radius: 10px;
+  border: 4px solid #E0E5EA;
+}
+#guideBlock{
+  width:100%;
+  height:70px;
+  background-color:rgb(0,100,0);
+  position:absolute;
+}
+#sidebar {
+  position: fixed;
+  width: 230px;
+  background: #57626F;
+  border: 4px solid #E0E5EA;
+  border-radius: 10px;
+  left: -240px;
+  top: 10px;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+#sidebar.active {
+  left: 20px;
+}
+
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size: 1.95em;
+  list-style: none;
+  padding: 25px 10px 10px 10px;
+}
+
+#sidebar ul li:not(:first-child) {
+  width: 90%;
+  margin-left: 10%;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 15px 10px;
+}
+
+#sidebar ul li a {
+  color: #dfe5eb;
+  text-decoration:none;
+}
+
+#sidebar ul li a:hover {color: #59e9df}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 250px;
+  top: -1px;
+  background: #E0E5EA;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background: rgb(0,100,0)}
+#sidebar .toggle-btn:hover span {background: #E0E5EA}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: rgb(0,100,0);
+  margin: 4px 0;
+}
