@@ -17,7 +17,7 @@ function searchq(){
   var searchTxt = $("input[name='ingredient']").val();
   console.log(searchTxt);
   //if(searchTxt=="") searchTxt = "no";
-  $.post("search.php", {searchVal: searchTxt}, function(output) {
+  $.post("includes/search.php", {searchVal: searchTxt}, function(output) {
     $("#output").html(output);
   });
 }
@@ -54,7 +54,7 @@ function requestRecipes(){
   searchString += selectedIngredients[selectedIngredients.length-1].id.trim();
   searchString = searchString.trim();
   console.log(searchString);
-  $.post("request.php", {searchVal: searchString}, function(output){
+  $.post("includes/request.php", {searchVal: searchString}, function(output){
     $("#recipe_output").html(output);
   });
 }
@@ -74,7 +74,7 @@ function requestRecipes(){
   </head>
 
 <?php
-  require('header.php');
+  require('includes/header.php');
 ?>
 
   <div class="left_side">
@@ -91,5 +91,5 @@ function requestRecipes(){
   </div>
 
 <?php
-  require('footer.html');
+  require('includes/footer.html');
  ?>
