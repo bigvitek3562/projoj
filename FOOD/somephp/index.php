@@ -15,15 +15,16 @@
 var selectedIngredients = [];
 function searchq(){
   var searchTxt = $("input[name='ingredient']").val();
-  console.log(searchTxt);
+  //console.log(searchTxt);
   //if(searchTxt=="") searchTxt = "no";
   $.post("includes/search.php", {searchVal: searchTxt}, function(output) {
     $("#output").html(output);
   });
 }
 
+searchq();
+
 function addIngredient(ingr_id, ingr_name){
-  console.log("oh wow!!");
   selectedIngredients.push(new ingredient_c(ingr_id, ingr_name));
   showList();
 }
@@ -70,7 +71,7 @@ function requestRecipes(){
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="http://allfont.ru/allfont.css?fonts=pollock3ctt" rel="stylesheet" type="text/css" />
-    <title>some php</title>
+    <title>Поиск</title>
   </head>
 
 <?php

@@ -4,59 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cookit</title>
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="titleScreen/css/main.css">
-    <link rel="icon" href="favicon.ico" type="titleScreen/images/x-icon">
 
   </head>
-  <body>
-    <div id="guideBlock">
-      <img src="titleScreen/images/cookit.PNG" style="width: 200px; height: 70px; margin-left: 850px; margin-top: 3px; position: fixed;">
+  <?php
+    require('includes/header.php');
+  ?>
+
+  <div class="center">
+    <a href="index.php" style="color:white; text-decoration: none;">
+    <div class="center1">
+      <img src="titleScreen/images/Salat.png" alt="Найти" class="saladd">
+      <!--<img src="titleScreen/images/foundBtn.png" alt="Найти">!-->
+      <div class="textt">Найти!</div>
     </div>
-
-<!--<form align="center" name="test" autocomplete="off">
-
-  <input name="ingredient" type="text" placeholder="Введите ингридиенты..." style="width: 300px; height: 28px; border-radius: 7px ">
-  <input type="submit" title="Найти рецепты" onclick="Form()" value="Найти" style="width: 350px; height: 180px;border: 7px;cursor: pointer; border-radius: 7px; background: transparent;font: 128px/1.3 Impact;color: #fff; margin-top: 21%; border-color:transparent;border-style: dashed;; margin-left:11%">
-  </form>-->
-  <div id="fndForm" onclick="PoiskAppear()">
-    <img src="titleScreen/images/foundBtn.PNG">
-  </div>
-  <div id="veggies">
-    <img src="titleScreen/images/Salat.PNG" style="transform: rotate(-5deg); margin-top: 30px">
-
+    </a>
   </div>
 
- <div id="Poisk"><div class="close" onclick="PoiskDis()"></div>
-  <a href="index.php"> <img src="titleScreen/images/quMark.png" title="Как это работает?" style="width:70px;height:100px;position: absolute;top:1225px; left: -480px;"> </a>
-
-
-    <div id="sidebar">
-      <div class="toggle-btn" onclick="OpenMenu()" title="Меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul>
-        <li>Меню</li>
-        <li><a href="/" title="Главная">Главная</a></li>
-        <li><a href="" title="Новости">Новости</a></li>
-        <li><a href="" title="Описание">Описание</a></li>
-        <li><a href="https://www.youtube.com/channel/UCdVe7C8WNN8wdmeRTsPbzaA?view_as=subscriber" target="_blank" title="Ютуб канал">Канал</a></li>
-        <li><a href="https://vk.com/grekostars" target="_blank" title="Группа ВК">Группа</a></li>
-      </ul>
-    </div>
-
-    <script>
-      function OpenMenu() {
-        document.getElementById('sidebar').classList.toggle('active');
-      }
-      function PoiskAppear() {
-        document.getElementById('Poisk').classList.toggle('active');
-      }
-      function PoiskDis(){
-        document.getElementById('Poisk').classList.toggle('passive');
-      }
-    </script>
-  </body>
-</html>
+  <?php
+    require('includes/footer.html');
+   ?>
