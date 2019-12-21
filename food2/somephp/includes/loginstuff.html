@@ -1,0 +1,20 @@
+<div style="font-size: 38px; color: white; top: 30px; right:30px; position: absolute; padding-left: 10px; padding-right: 10px cursor: pointer;" alt="Войти">
+  <input type="button" value="Войти" onmouseup="showLogin();" style="cursor: pointer; background: RGB(42, 184, 92); border-radius: 5px; border: none; color: white; font-size: 30px;">
+  <div id="loginid" class="login">
+    <form action = "includes/login.inc.php" method="post">
+
+      <div style="font-size: 30px;">Логин:</div>
+      <div style="display:block;">
+        <input name="mailuid" type="text" class="textbox" placeholder="Ваш логин...">
+      </div>
+
+      <div style="font-size: 30px;">Пароль:</div>
+      <div style="display:block;">
+        <input name="pwd" type="password" class="textbox" placeholder="Ваш пароль...">
+      </div>
+
+      <button  style="border-radius: 3px; border: none; font-size: 30px; color: white; background: RGB(0, 232, 85); margin-top: 10px; float: right;" name="login-submit" type="submit">Подтвердить</button>
+      <a href="signup.php" style="font-size: 21px; margin-top: 20px; color: white;">Зарегистрироваться</a>
+    </form>
+  </div>
+</div>
