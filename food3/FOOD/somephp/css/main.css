@@ -1,0 +1,230 @@
+
+@font-face { font-family: titlefont; src: url('fonts/Lobster-Regular.ttf'); }
+
+body{
+
+
+	background: url('../images/veggies1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+img{
+	transition-duration: 0.2s;
+}
+
+.header_tab{
+	font-size: 38px;
+	color: white;
+	margin-left: 30px;
+	transition-duration: 1s;
+}
+
+.header_tab:hover img{
+	transform: rotate(-10deg) translateY(-5px);
+}
+
+.signup_error{
+	color:red;
+	background-color: RGBa(50,50,50,0.5);
+	border-radius:6px;
+	font-size: 36px;
+}
+
+.signup_success{
+	color: RGB(0,255,0);
+	background-color: RGBa(50,50,50,0.5);
+	border-radius:6px;
+	font-size: 36px;
+}
+
+.ingred_result{
+	overflow: auto;
+	width: 90%;
+	height: 160px;
+	margin-top:10px;
+	color: white;
+	font-size: 25px;
+	font-family: Arial;
+	margin-bottom:10px;
+	background-color: RGBa(160,160,160,0.6);
+	border-radius: 3px;
+}
+
+.searchbar{
+	font-size: 30px;
+	border: none;
+	border-radius: 2px;
+	background-color: RGBa(255,255,255,0.4);
+	border: 2px solid RGBa(255,255,255,0.0);
+	color: RGB(255,255,255);
+	transition-duration:0.3s;
+}
+.searchbar:focus{
+	border-color: RGBa(255,255,255,0.5);
+}
+.searchbar::placeholder{
+	color: RGB(200,200,200);
+}
+
+.ingred_holder{
+	font-size: 30px;
+	color: white;
+	width: 500px;
+	height: 40px;
+	margin-bottom: 2px;
+	border-radius: 3px;
+	border: none;
+	background-color: RGBa(160,160,160,0.6);
+}
+
+.ingred_delete{
+	font-size: 30px;
+	width: 40px;
+	height: 100%;
+	transition-duration: 0.2s;
+	border-radius: 3px;
+	border:none;
+}
+.ingred_delete:hover{
+	background-color: RGB(190,100,100);
+}
+
+.ingred_selected{
+	position: relative;
+	overflow: auto;
+	height: auto;
+	min-height: 80px;
+	max-height: 400px;
+	margin-bottom: 10px;
+}
+
+
+
+.ingred_button{
+	font-size: 24px;
+	margin: 1px;
+	height: 30px;
+	border: none;
+	opacity: 1.5;
+	background-color: RGB(255,255,255);
+	transition-duration: 0.2s;
+	overflow: hidden;
+	max-width: 0;
+	min-width: 260px;
+}
+.ingred_button:hover{
+	background-color: RGB(42, 245, 153);
+	max-width: 700px;
+	min-width: 270px;
+}
+.ingred_button:active{
+
+}
+
+.search_button{
+	transition-duration: 0.2s;
+	font-size: 36px;
+	color: white;
+	width: 260px;
+	height: 64px;
+	border-radius: 3px;
+	border: none;
+	background-color: RGB(0,150,50);
+}
+.search_button:hover{
+	background-color: RGB(0,220,50);
+}
+.search_button:disabled{
+	color: gray;
+	background-color: RGB(30,80,30);
+}
+
+.left_side{
+	position: absolute;
+	top: 80px;
+	width: 49%;
+	height: 90%;
+	left:0;
+	margin: 8px;
+	overflow: auto;
+}
+
+.right_side{
+	position: absolute;
+	top: 80px;
+	width: 49%;
+	height: 90%;
+	right:0;
+	margin: 8px;
+	overflow: auto;
+}
+
+.recipe_list{
+	font-family: Arial;
+	width: 90%;
+	height: 80%;
+	font-size: 30px;
+	color: white;
+	border-radius: 3px;
+	margin: none;
+	overflow: auto;
+	background-color: RGBa(160,160,160,0.6);
+}
+
+.recipe_link{
+	padding-left: 6px;
+	background-color: RGBa(50,50,50,0.5);
+	color: RGBa(255,255,255,0);
+	margin: 2px;
+	height: auto;
+	transition-duration: 0.1s;
+	border: none;
+	border-radius: 3px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.recipe_link:hover{
+	background-color: RGBa(0,180,100,0.5);
+}
+
+.recipe_link_text{
+	width: 90%;
+}
+
+.recipe_link_status{
+	font-size: 28px;
+	color: lightgreen;
+}
+
+.recipe_link_ingredlist{
+	opacity: 0;
+	font-size: 0;
+	transition-duration: 0.2s;
+	transition-delay: 0.2s;
+}
+.recipe_link:hover .recipe_link_ingredlist{
+	opacity: 1;
+	font-size: 20px;
+}
+
+
+.login{
+	background: RGB(42, 184, 92);
+	border-radius: 5px;
+	position: fixed;
+	width: 380px;
+	right: -350px;
+	margin-top: 20px;
+	padding: 20px;
+	display: block;
+	opacity: 0;
+	transition-duration: 0.4s;
+}
+.login.active{
+	opacity: 1;
+	right: 50px;
+}

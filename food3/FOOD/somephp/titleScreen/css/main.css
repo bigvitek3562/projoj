@@ -1,0 +1,30 @@
+.saladd{
+	transition-duration: 0.5s;
+	transform: rotate(-3deg);
+}
+.textt{
+	transition-duration: 0.5s;
+	margin-top:100px;
+	transform: rotate(3deg);
+}
+.center1{
+	color: white;
+	font-size: 200px;
+  display: flex;
+  cursor: pointer;
+}
+.center1:hover > .saladd{
+	transform: rotate(-5deg);
+}
+.center1:hover > .textt{
+	transform: rotate(6deg);
+}
+
+.center {
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
